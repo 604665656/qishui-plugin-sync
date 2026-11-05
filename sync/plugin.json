@@ -1,0 +1,26 @@
+{
+  "id": "sync",
+  "name": "数据同步与复盘",
+  "version": "1.0.0",
+  "api_version": 2,
+  "summary": "全量刷新曲库/榜单/热词/结算，生成每日复盘与阶段回顾报告。",
+  "author": "604665656",
+  "license": "MIT",
+  "homepage": "https://github.com/604665656/qishui-plugin-sync",
+  "entry": "sync.plugin:SyncPlugin",
+  "tab": {
+    "group": "数据",
+    "title": "数据同步与复盘",
+    "order": 20
+  },
+  "needs": [
+    "api",
+    "auth",
+    "store",
+    "schedule"
+  ],
+  "standalone": "sync/__main__.py",
+  "update": {
+    "feed": ""
+  }
+}
